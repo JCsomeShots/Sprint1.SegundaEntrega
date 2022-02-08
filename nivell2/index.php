@@ -18,7 +18,7 @@
 	<h1>PHP Bàsics</h1>	
 	<h2>NIVELL 2</h2>
 
-<SECTION class="ej01 ex">
+<section class="ej01 ex">
 <?php
 echo "<h3>EXERCICI 1</h3>
 <p>Calcular la suma</p>";
@@ -40,7 +40,51 @@ echo "la suma de los valores es: ". suma(25,25) . "<br/>";
 
 
 ?>
-</SECTION>
+</section>
+
+
+<section class="ej02 ex">
+<?php 
+
+echo "<h3>EXERCICI 2</h3>
+<p>Primer i últim</p>";
+echo "<p>Escriu un programa PHP per intercanviar el primer i últim caràcter d'una cadena donada i imprimeix la nova cadena.</p>";
+
+function trocar($cadena){
+	if ((strlen($cadena))===0) {
+		echo '"no ha introducido ninguna palabra"';
+	}
+
+	if ((strlen($cadena))!==1) {
+		$valor1 = substr($cadena,-1);
+		$valor2 = substr($cadena,0,1);
+
+		$cadena = str_split($cadena);
+		$cadena = array_slice($cadena, 0 , -1);
+		array_shift($cadena);
+		array_unshift($cadena, $valor1);
+		array_push($cadena, $valor2);
+
+		$cadena = implode("",$cadena);
+		echo $cadena . "<br/>";
+	} else {
+		echo $cadena . "<br/>";
+	}
+	
+}
+
+trocar('juan');
+trocar('wxyz');
+trocar('a');
+trocar('');
+trocar('ab');
+trocar('ama');
+trocar('rayar');
+
+
+?>
+</section>
+
 
 </body>
 </html>
