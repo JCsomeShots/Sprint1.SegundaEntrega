@@ -95,5 +95,49 @@ echo "<h4><strong>".ALUMNO."</strong></h4>";
 </section>
 
 
+<section class="ej04 ex">
+<?php 
+echo "<h3>EXERCICI 4</h3>
+<p>Operaciones Matemáticas Básicas</p><br/>";
+
+$x = 6;
+$y = 4;
+$n = 2.5;
+$m = 3.4;
+
+echo "La variable 'X' tiene el valor de ".$x."<br/>";
+echo "La variable 'Y' tiene el valor de ".$y."<br/>";
+echo "<br/>";
+echo "la suma de 'X' e 'Y' es: ".($x + $y). "<br/>";
+echo "la resta de 'X' e 'Y' es: ".($x - $y). "<br/>";
+echo "la multiplicación de 'X' e 'Y' es: ".($x * $y). "<br/>";
+echo "la división de 'X' e 'Y' es: ".($x / $y). "<br/>";
+echo "el módulo de 'X' e 'Y' es: ".($x % $y). "<br/>";
+echo "<br/>";
+
+
+echo "La variable 'N' tiene el valor de ".$n."<br/>";
+echo "La variable 'M' tiene el valor de ".$m."<br/>";
+echo "<br/>";
+echo "la suma de 'N' e 'M' es: ".($n + $m). "<br/>";
+echo "la resta de 'N' e 'M' es: ".($n - $m). "<br/>";
+echo "la multiplicación de 'N' e 'M' es: ".($n * $m). "<br/>";
+echo "la división de 'N' e 'M' es: ".($n / $m). "<br/>";
+echo "el módulo de 'N' e 'M' es: ".($n % $m). "<br/>";
+echo "<br/>";
+
+echo " el doble de la variable 'X' es: ".($x*2). "<br/>";
+echo " el doble de la variable 'Y' es: ".($y*2). "<br/>";
+echo " el doble de la variable 'N' es: ".($n*2). "<br/>";
+echo " el doble de la variable 'M' es: ".($m*2). "<br/>";
+echo "<br/>";
+echo "La suma de todas las variables es: ".($x + $y + $n + $m)."<br/>";
+echo "<br/>";
+echo "La multiplicación de todas las variables es: ".($x * $y * $n * $m)."<br/>";
+?>
+</section>
+
+
+
 </body>
 </html>
