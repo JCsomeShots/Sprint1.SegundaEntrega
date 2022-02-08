@@ -82,5 +82,18 @@ echo "$saludo $contingut <br/>";
 ?>
 </section>
 
+
+<section class="ej03 ex">
+<?php 
+echo "<h3>EXERCICI 3</h3>
+<p>Constant</p><br/>";
+
+define("ALUMNO", "Juan Carlo Castillo");
+echo "<h4><strong>".ALUMNO."</strong></h4>";
+
+?>
+</section>
+
+
 </body>
 </html>
