@@ -55,5 +55,32 @@ if (is_bool($boleano)) {
 }
 ?>
 </SECTION>
+
+
+<section class="ej02 ex">
+<?php 
+
+echo "<h3>EXERCICI 2</h3>
+<p>Strings</p><br/>";
+
+$saludo = "Hello, World!";
+echo "$saludo <br/>";
+$saludo = strtoupper($saludo);
+echo "$saludo <br/>";
+$saludo = strtolower($saludo);
+echo "$saludo <br/>";
+$contar = strlen($saludo);
+echo "$contar <br/>";
+$saludo = strrev($saludo);
+echo "$saludo <br/>";
+$saludo = strrev($saludo);
+echo "$saludo <br/>";
+$saludo = "Bon dia Mon!";
+$contingut = "Aquest és el curs de PHP";
+echo "$saludo $contingut <br/>";
+
+?>
+</section>
+
 </body>
 </html>
