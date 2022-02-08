@@ -138,6 +138,41 @@ echo "La multiplicación de todas las variables es: ".($x * $y * $n * $m)."<br/>
 </section>
 
 
+<section class="ej05 ex">
+<?php 
+echo "<h3>EXERCICI 5</h3>
+<p>Arrays</p><br/>";
+
+$arreglo1 = array(0,1,2,3,4);
+$arreglo2 = array(9,8,7);
+echo "Imprimiendo el primer array <br/>";
+print_r($arreglo1);
+echo "<br/>";
+echo "<br/>";
+
+echo "Imprimiendo el segundo array <br/>";
+foreach ($arreglo2 as $key ) {
+	echo $key . "<br/>";
+}
+echo "<br/>";
+echo "Push-ando el segundo array <br/>";
+array_push($arreglo2, 6);
+print_r($arreglo2);
+echo "<br/>";
+echo "<br/>";
+
+echo "Spread operator para combinarlos, array_reverse del segundo arreglo, adjunto el número 5 <br/>";
+$arreglo2 = array_reverse($arreglo2);
+$arreglo3 = array(...$arreglo1 , 5 , ...$arreglo2);
+print_r($arreglo3);
+echo "<br/>";
+foreach ($arreglo3 as $key) {
+	echo $key . "<br/>";
+}
+?>
+</section>
+
+
 
 </body>
 </html>
