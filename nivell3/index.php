@@ -54,6 +54,40 @@ cadena("  hola mund o  ");
 ?>
 </section>
 
+<section class="ej02 ex">
+<?php 
+
+echo "<h3>EXERCICI 2</h3>
+<p>nombre de vegades</p>";
+echo "<p>Escriu un programa en PHP que compta el nombre total de vegades que un valor existeix en l'array.</p>";
+
+function contar ($str , $llave){
+
+	if((!(empty($str)))== false){ 
+		echo "El primer valor esta vacio <br/>";
+	} else if((!(is_string($str)))== true){
+		echo "El primer valor $str , debe contener información alfanumérica <br/>";
+	} else if((!(empty($llave)))== false){ 
+		echo "El segundo valor esta vacio <br/>";
+	} else if((!(is_string($llave)))== true){
+		echo "el segundo valor $llave , debe ser un string <br/>";
+	} else {
+		$str = str_split($str);
+		$count = array_count_values($str);
+		echo "El número de veces que aparece $llave es: ".$count[$llave] . "<br/>";
+	}
+}
+contar('hola mundo',2);
+contar(true,'o');
+contar('hola mundo','');
+contar('','o');
+contar('hola mundo','o');
+contar('hola oooo','o');
+contar('hola mundo aquí testeando','a');
+
+?>
+</section>
+
 
 
 </body>
