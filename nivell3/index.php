@@ -88,6 +88,39 @@ contar('hola mundo aquí testeando','a');
 ?>
 </section>
 
+<section class="ej03 ex">
+<?php 
+
+echo "<h3>EXERCICI 3</h3>
+<p>Elimina un element</p>";
+echo "<p> $ X = array (10, 20, 30, 40, 50, 60);</p>
+<p>Elimina un element de l’array anterior. Després d'eliminar l'element, les claus senceres han de ser normalitzades.</p>";
+
+$x = array( 10 , 20, 30, 40, 50, 60);
+// eliminando un elemento cambiando el orden
+function eliminar($x){
+	unset($x[3]);
+	print_r($x);
+}
+// eliminar ($x);
+
+
+// eliminando un elemento SIN cambiando el orden
+//***************por parámetro********
+$positionToDelete = 3;
+$howMany = 1;
+
+function newOrden($x, $y , $z) {
+	array_splice($x, $y , $z);
+	print_r($x);
+}
+newOrden($x, $positionToDelete , $howMany);
+
+
+?>
+</section>
+
+
 
 
 </body>
